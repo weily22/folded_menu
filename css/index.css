@@ -1,0 +1,88 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+html{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
+html,body{
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, .65);
+    background: #F7F7F7;
+}
+ul li{list-style: none;}
+a{text-decoration: none;}
+header{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    background-color: #061024;
+    padding:0 20px;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.main_wrapper{
+    background-color: #fff;
+    position: relative;
+}
+.main_wrapper .sidebar{
+    position: absolute;
+    top:0;
+    z-index: 99;
+    width: 272px;
+    border-right: 1px solid #EEE;
+    bottom:0;
+}
+.main_wrapper .sidebar .menu{
+    padding: 12px 0;
+    overflow: auto;
+}
+.menu_item{padding-left:40px;}
+.menu_item h2{
+    font-weight: normal;
+    color: rgba(0, 0, 0, .7);
+    display: inline;
+    font-size: 16px;
+
+}
+.menu_item i.tri_icon{
+    display: inline-block;
+    position: relative;
+    border:6px solid #ccc;
+    border-color: transparent;
+    border-left-color: #d8d8d8;
+}
+.menu_item ul{display: none;}
+.menu_item ul li{padding-left:40px;}
+.menu_item ul li span{color: rgba(0, 0, 0, .65);cursor:pointer;}
+.menu_item ul li.check span{color: #37f;}
+.menu_item.menu_show ul{display: block;}
+.menu_item.menu_show i.tri_icon{transform: rotate(90deg);}
+.main_con{
+    position: relative;
+    margin-left: 271px;
+    padding: 12px 40px;
+    background: #fff;
+    border-left: 1px solid #EEE;
+}
+
+.main_con .main_con_item{
+    display: none;
+}
+.main_con .main_con_item:nth-child(1){
+    display: block;
+}
+/*.main_con .main_con_item li.ckeck{*/
+    /*display: block;*/
+/*}*/
+.main_con .main_con_item .title{
+    margin-bottom:16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.main_con_item .con p{
+    margin: 0 0 8px;
+    /*color: rgba(0, 0, 0, .65);*/
+}
