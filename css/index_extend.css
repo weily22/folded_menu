@@ -1,0 +1,85 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+html{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
+ul li{list-style: none;}
+a{
+    text-decoration: none;
+    color: #108EE9;
+    transition: color .3s ease;
+}
+html,body{
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, .65);
+    background: #F7F7F7;
+}
+header{
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    color:#fff;
+    background-color: #061024;
+    padding:0 20px;
+}
+.container{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.main_wrapper{
+    background-color: #fff;
+    position: relative;
+    /*padding-top:45px;*/
+    overflow: hidden;
+}
+.main_wrapper .sidebar{
+    position: absolute;
+    top:0;
+    z-index: 99;
+    width: 272px;
+    border-right: 1px solid #EEE;
+    bottom:0;
+}
+.main_wrapper .sidebar .menu{padding: 12px 0;overflow: auto;}
+.nav_item{
+    padding-left:40px;
+    position: relative;
+}
+.item h2{
+    font-weight: normal;
+    color: rgba(0, 0, 0, .7);
+    display: inline;
+    font-size: 16px;
+}
+.nav_item i.tri_icon{
+    position: absolute;
+    left:26px;top:15px;
+    width:8px;height:8px;
+    border-radius: 50%;
+    background-color: darkorange;
+}
+.nav_item{cursor: pointer;}
+.nav_item ul{display: none;}
+.nav_item ul li{padding-left:40px;}
+.nav_item ul li span{color: rgba(0, 0, 0, .65);cursor:pointer;}
+.nav_item ul li.check span{color: #37f;}
+.nav_item.nav_show ul{display: block;}
+.nav_item.nav_show i.tri_icon{
+    background-color:orangered;}
+.main_con{
+    position: relative;
+    margin-left: 271px;
+    padding: 12px 40px;
+    background: #fff;
+    border-left: 1px solid #EEE;
+}
+
+.main_con .main_con_item{display: none;}
+.main_con .main_con_item:nth-child(1){display: block;}
+.main_con .main_con_item .title{
+    margin-bottom:16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.main_con_item .con p{margin: 0 0 8px;}
