@@ -90,3 +90,59 @@
 >    ```
 >
 > 具体细节阅读源码：(＾－＾)V。。。
+>
+> #### 改写成jQ插件方式
+>
+> js文件：index_extend.js
+>
+> 实例：index_extend.html
+>
+> 源代码：V1.0_jq_extend 分支
+>
+> ```html
+> 默认调用方式： $('.main_wrapper').foldedMenu()
+> 默认样式见：index_extend.css
+> 默认布局方式：
+> <div class="main_wrapper">
+>   	<ul class="menu">
+>       	<li class="menu_item menu_show">
+>           	<a><h2>四大喜剧</h2></a>
+>           	<ul class="menu_item_child">
+>               <li class="check"><span>仲夏夜之梦</span></li>
+>               <li><span>皆大欢喜</span></li>
+>               <li><span>第十二夜</span></li>
+>               <li><span>威尼斯商人</span></li>
+>           	</ul>
+>       	</li>
+>     </ul>
+>   	<ul>
+>       	<li class="main_con_item">
+>           	<ul>
+>                <li>A Midsummer Night's Dream</li>
+>                <li>As you like it</li>
+>                <li>Twelfth</li>
+>                <li>The Merchant of Venice</li>
+>           	</ul>
+>       	</li>
+>   	</ul>
+> </div>
+> <script>
+> // 自定义调用： 
+> // .main_wrapper  容器
+> $('.main_wrapper').foldedMenu({
+>    'topMenu': '.menu_item',      // 如上html布局中的menu_item
+>    'topMenuTitle': 'h2',		// menu_item下的h2标题
+>    'topMenuClick': '.menu_item a',        // menu_item下的点击元素
+>    'childMenu': '.menu_item_child',		 // menu_item下的子级元素
+>    'childMenuClick': '.menu_item_child li',  // menu_item下的子级点击元素
+>    'menuShow': 'menu_show',		         //一级菜单展开的样式			
+>    'menuCheck': 'check',				//子级菜单展开的样式
+>    'mainConItem': '.main_con_item',      // 左边栏菜单点击对应内容容器
+>    'mainConItemChild': 'li'				// 菜单对应内容对应的索引的标签(main_con_item下的li)
+> });
+> </script>	
+> ```
+>
+> 
+>
+> 
